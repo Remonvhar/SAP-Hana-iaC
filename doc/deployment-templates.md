@@ -13,7 +13,7 @@ Not implementd yet:
 - NETWEAVER Monitoring (need implementation)
 
 Additionally you need to set up pillars. In dev-mode we use mostly `automatic`.
-See https://github.com/SUSE/ha-sap-terraform-deployments/tree/master/pillar_examples#pillar-examples for more details.
+See https://github.com/Remonvhar/SAP-Hana-iaC/tree/main/pillar_examples/azure for more details.
 
 The values of ipranges and ips needs are as example there. You will need to adapt accordingly your network configuration.
 
