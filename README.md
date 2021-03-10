@@ -1,17 +1,5 @@
 # Automated SAP/HA Deployments in Public/Private Clouds with Terraform
 
-[![Build Status](https://travis-ci.org/SUSE/ha-sap-terraform-deployments.svg?branch=master)](https://travis-ci.org/SUSE/ha-sap-terraform-deployments)
-**Supported terraform version  `0.13.4`**
-___
-
-# Supported cloud providers
-
-- [libvirt/KVM](libvirt)
-- [azure](azure)
-- [google cloud](gcp)
-- [aws](aws)
-
-
 ## Major features
 
 - HA Clusters and HANA deployment
@@ -26,7 +14,7 @@ ___
 
 ## Templates
 
-We provide minimal templates for setting up the terraform variables in order to get started with the project.
+minimal templates for setting up the terraform variables in order to get started with the project.
 For fine tuning refer to variable specification.
 
 - [templates](doc/deployment-templates.md)
@@ -37,7 +25,7 @@ This project is based in [terraform](https://www.terraform.io/) and [salt](https
 
 Components:
 
-- **terraform**: Terraform is used to create the required infrastructure in the specified provider. The code is divided in different terraform modules to make the code modular and more maintanable.
+- **terraform**: Terraform is used to create the required infrastructure. The code is divided in different terraform modules to make the code modular and more maintanable.
 - **salt**: Salt configures all the created machines by terraform based in the provided pillar files that give the option to customize the deployment.
 
 ## Components
@@ -59,10 +47,6 @@ This project uses Terraform for the deployment and Saltstack for the provisionin
 **Be careful with what instance type you will use because default choice is systems certified by SAP, so cost could be expensive if you leave the default value.**
 
 These are links to find certified systems for each provider:
-
-- [SAP Certified IaaS Platforms for AWS](https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/iaas.html#categories=Amazon%20Web%20Services)
-
-- [SAP Certified IaaS Platforms for GCP](https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/iaas.html#categories=Google%20Cloud%20Platform)
 
 - [SAP Certified IaaS Platforms for Azure](https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/iaas.html#categories=Microsoft%20Azure) (Be carreful with Azure, **clustering** means scale-out scenario)
 
