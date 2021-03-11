@@ -112,9 +112,4 @@ Some references:
 
 ## Storage options
 
-After downloading the described options, the files must be stored in the corresponding storage. Create a folder with a meaningful name (`sap_download_basket` for example), and upload there all the files. It's recommended to create specific subfolders for the different concepts (`hana`, `netweaver` or `s4hana`) and upload the specific files, this reduces the amount of downloaded data. Otherwise, the project downloads all the files, which are quite large in size.
-
-- AWS - S3 bucket
-- Azure - Storage account
-- GCP - GCP storage
-- Libvirt - NFS share
+After downloading the described options, the files must be stored in the storage account. Create a folder with a meaningful name (`sap_download_basket` for example), and upload  all the files. It's recommended to create specific subfolders for the different concepts (`hana`, `netweaver` or `s4hana`) and upload the specific files, this reduces the amount of downloaded data. Otherwise, the project downloads all the files, which are quite large in size.
